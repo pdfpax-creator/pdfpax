@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Passport Photo Maker Online Free — 35x45mm & 2x2 inch | PDFPax</title>
+<meta name="description" content="Make a passport size photo online free. Crop any picture to 35x45mm or 2x2 inch, white background, print-ready. No signup, works in your browser.">
+<link rel="canonical" href="https://pdfpax.com/tools/passport-photo-maker.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PDFPax">
+<meta property="og:title" content="Passport Photo Maker Online Free | PDFPax">
+<meta property="og:description" content="Crop any photo to official passport size (35x45mm / 2x2 inch). Free, no signup, print-ready download.">
+<meta property="og:image" content="https://pdfpax.com/assets/img/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://pdfpax.com/tools/passport-photo-maker.html">
+<link rel="stylesheet" href="/assets/css/style.css?v=20261005c">
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Passport Photo Maker","url":"https://pdfpax.com/tools/passport-photo-maker.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-14QC3Q5DRY"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',analytics_storage:'denied',functionality_storage:'denied',personalization_storage:'denied',security_storage:'granted'});
+gtag('js',new Date());gtag('config','G-14QC3Q5DRY');
+try{if(localStorage.getItem('pdfpax-consent')==='accepted'){gtag('consent','update',{ad_storage:'granted',analytics_storage:'granted',functionality_storage:'granted',personalization_storage:'granted'});}}catch(e){}
+</script>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<header class="site-header"><div class="container header-inner">
+<a class="brand" href="/" aria-label="PDFPax home"><img src="/assets/img/logo.svg" width="32" height="32" alt="PDFPax logo"><span>PDFPax</span></a>
+<button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#i-menu"/></svg></button>
+<nav class="site-nav" aria-label="Main navigation"><a href="/">Home</a><a href="/#tools">Tools</a><a href="/blog/">Blog</a><a href="/founder/">Founder</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></nav>
+<a class="btn btn-sm header-cta" href="/#tools">All tools</a></div></header>
+<main><div class="container">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <span>Passport Photo Maker</span></nav>
+<div class="tool-top"><span class="pill pill-soft"><span class="dot"></span>Client-side sandbox</span><span class="pill">No uploads</span></div>
+<h1 class="reveal">Passport Photo Maker — Free 35×45mm & 2×2 inch</h1>
+<p class="lead reveal">Turn any photo into an official passport size photo. Choose 35×45mm or 2×2 inch, position your face, download print-ready. Free, no signup.</p>
+<div class="workspace reveal">
+<div class="dropzone" id="dropzone" role="button" tabindex="0" aria-label="Upload a photo for passport size">
+<span class="dz-icon"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#i-upload_file"/></svg></span>
+<p><strong>Drag &amp; drop your photo here</strong></p><p>or click to browse — files stay on your device.</p>
+<span class="dz-privacy"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#i-lock"/></svg>Files never leave your device</span></div>
+<input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp" hidden>
+<div id="editorBox" hidden>
+<p class="note" style="margin-bottom:8px"><strong>Size:</strong></p>
+<div class="filter-chips" id="sizeChips" role="group" aria-label="Passport photo size">
+<button class="chip active" data-w="413" data-h="531">35×45mm</button>
+<button class="chip" data-w="600" data-h="600">2×2 inch</button>
+</div>
+<p class="note" style="margin-top:10px"><strong>Drag</strong> to position your face inside the frame. Face should fill 70–80% of the height.</p>
+<div style="text-align:center;margin:16px 0"><canvas id="ppCanvas" style="max-width:300px;width:100%;border:2px dashed var(--primary);border-radius:8px;cursor:grab;touch-action:none"></canvas></div>
+<label class="note" for="zoomRange">Zoom</label>
+<input type="range" id="zoomRange" min="1" max="3" step="0.01" value="1" style="width:100%;max-width:400px">
+</div>
+<button class="btn" id="actionBtn" disabled>Download Passport Photo</button>
+<div class="progress"><div></div></div>
+<p class="status" id="statusMsg" role="status"></p>
+<div class="result" id="resultBox"></div>
+</div>
+<h2 class="reveal">How to make a passport size photo</h2>
+<ol class="steps reveal"><li>Upload a clear front-facing photo with a plain background.</li><li>Pick <strong>35×45mm</strong> (most countries) or <strong>2×2 inch</strong> (USA/India visa).</li><li>Drag so your face fills most of the frame, eyes level.</li><li>Download and print at any photo studio — or print at home at 300 DPI.</li></ol>
+<h2 class="reveal">About this free passport photo maker</h2>
+<p class="reveal">Official passport photos must be 35×45mm in most countries (2×2 inch for US visas), with your face taking up 70–80% of the frame. This tool crops your photo to the exact ratio at print resolution, so it comes out the right physical size at 300 DPI. For best results use a photo with a plain light background, face the camera directly, and keep a neutral expression. Everything runs in your browser — no upload, no watermark, no account.</p>
+</div></main>
+<footer class="site-footer"><div class="container"><p>&copy; <span data-year></span> PDFPax. Free online tools, no signup.</p><p><a href="/about.html">About</a> &middot; <a href="/contact.html">Contact</a> &middot; <a href="/blog/">Blog</a></p></div></footer>
+<script src="/assets/js/main.js?v=20261005" defer></script>
+<script>
+(function(){
+"use strict";
+var dz=document.getElementById('dropzone'),fi=document.getElementById('fileInput'),
+btn=document.getElementById('actionBtn'),st=document.getElementById('statusMsg'),
+res=document.getElementById('resultBox'),box=document.getElementById('editorBox'),
+cv=document.getElementById('ppCanvas'),chips=document.getElementById('sizeChips'),
+zoom=document.getElementById('zoomRange');
+var img=null,ox=0,oy=0,scale=1,W=413,H=531,dragging=false,sx=0,sy=0,sox=0,soy=0;
+cv.width=W;cv.height=H;
+function loadFile(f){
+if(!/^image\/(jpeg|png|webp)$/.test(f.type)){st.textContent='Please choose a JPG, PNG or WebP image.';return;}
+var url=URL.createObjectURL(f),im=new Image();
+im.onload=function(){img=im;URL.revokeObjectURL(url);ox=0;oy=0;scale=1;zoom.value=1;box.hidden=false;btn.disabled=false;draw();st.textContent='Drag to position your face, then download.';res.innerHTML='';};
+im.onerror=function(){st.textContent='Could not read that image.';};im.src=url;
+}
+dz.addEventListener('click',function(){fi.click();});
+dz.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();fi.click();}});
+['dragover','dragenter'].forEach(function(ev){dz.addEventListener(ev,function(e){e.preventDefault();dz.classList.add('drag');});});
+['dragleave','drop'].forEach(function(ev){dz.addEventListener(ev,function(e){e.preventDefault();dz.classList.remove('drag');});});
+dz.addEventListener('drop',function(e){if(e.dataTransfer.files.length)loadFile(e.dataTransfer.files[0]);});
+fi.addEventListener('change',function(){if(fi.files.length)loadFile(fi.files[0]);});
+chips.addEventListener('click',function(e){var c=e.target.closest('.chip');if(!c)return;
+chips.querySelectorAll('.chip').forEach(function(x){x.classList.remove('active');});c.classList.add('active');
+W=parseInt(c.dataset.w,10);H=parseInt(c.dataset.h,10);cv.width=W;cv.height=H;draw();});
+function draw(){
+if(!img)return;
+var bs=Math.max(W/img.naturalWidth,H/img.naturalHeight)*scale;
+var dw=img.naturalWidth*bs,dh=img.naturalHeight*bs;
+var c=cv.getContext('2d');c.fillStyle='#fff';c.fillRect(0,0,W,H);
+c.drawImage(img,(W-dw)/2+ox,(H-dh)/2+oy,dw,dh);
+}
+function pos(e){var r=cv.getBoundingClientRect();var p=e.touches?e.touches[0]:e;return{x:(p.clientX-r.left)*(W/r.width),y:(p.clientY-r.top)*(H/r.height)};}
+function start(e){if(!img)return;dragging=true;var p=pos(e);sx=p.x;sy=p.y;sox=ox;soy=oy;e.preventDefault();}
+function move(e){if(!dragging||!img)return;var p=pos(e);ox=sox+(p.x-sx);oy=soy+(p.y-sy);draw();e.preventDefault();}
+function end(){dragging=false;}
+cv.addEventListener('mousedown',start);window.addEventListener('mousemove',move);window.addEventListener('mouseup',end);
+cv.addEventListener('touchstart',start,{passive:false});cv.addEventListener('touchmove',move,{passive:false});cv.addEventListener('touchend',end);
+zoom.addEventListener('input',function(){scale=parseFloat(zoom.value);draw();});
+btn.addEventListener('click',function(){
+if(!img)return;
+cv.toBlob(function(b){
+var url=URL.createObjectURL(b);
+st.textContent='Done! Print at 300 DPI for exact size.';
+res.innerHTML='<p><a class="btn" href="'+url+'" download="passport-photo.jpg">Download Passport Photo</a></p>';
+},'image/jpeg',0.95);
+});
+})();
+</script>
+<script>setTimeout(function(){try{var e=document.querySelectorAll(".reveal:not(.in)");for(var i=0;i<e.length;i++){e[i].classList.add("in");}}catch(_){}},2500);</script>
+</body>
+</html>
