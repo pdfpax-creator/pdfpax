@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resize Image to 20KB Online Free — Photo Resizer in KB | PDFPax</title>
+<meta name="description" content="Resize image to 20KB, 50KB or 100KB online free. Compress JPG/PNG photos to exact KB size in your browser — no upload, no signup, no watermark.">
+<link rel="canonical" href="https://pdfpax.com/tools/image-resizer.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PDFPax">
+<meta property="og:title" content="Resize Image to 20KB Online Free — Photo Resizer in KB | PDFPax">
+<meta property="og:description" content="Compress any photo to exactly 20KB, 50KB, 100KB or any size you pick. Free, private, no signup — everything runs in your browser.">
+<meta property="og:image" content="https://pdfpax.com/assets/img/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://pdfpax.com/assets/img/og-cover.jpg">
+<meta property="og:url" content="https://pdfpax.com/tools/image-resizer.html">
+<link rel="stylesheet" href="/assets/css/style.css?v=20261005c">
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Image Resizer to KB",
+  "url": "https://pdfpax.com/tools/image-resizer.html",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I resize an image to 20KB?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Upload your photo, pick the 20KB preset (or type any target size), and click Resize. The tool automatically adjusts quality and dimensions until the file is at or under 20KB, then lets you download it — all in your browser." }
+    },
+    {
+      "@type": "Question",
+      "name": "Will resizing to 20KB ruin my photo quality?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The tool reduces quality gradually and stops as soon as the target size is reached, so quality loss is minimal. For documents, PAN cards and passport photos at 20KB the result stays perfectly readable." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my photo uploaded to a server?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Everything happens locally in your browser using the Canvas API. Your photo never leaves your device." }
+    }
+  ]
+}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-14QC3Q5DRY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {ad_storage:'denied', analytics_storage:'denied', functionality_storage:'denied', personalization_storage:'denied', security_storage:'granted'});
+  gtag('js', new Date());
+  gtag('config', 'G-14QC3Q5DRY');
+  try { if (localStorage.getItem('pdfpax-consent')==='accepted') { gtag('consent','update',{ad_storage:'granted',analytics_storage:'granted',functionality_storage:'granted',personalization_storage:'granted'}); } } catch(e){}
+</script>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/" aria-label="PDFPax home">
+      <img src="/assets/img/logo.svg" width="32" height="32" alt="PDFPax logo">
+      <span>PDFPax</span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#i-menu"/></svg></button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="/">Home</a>
+      <a href="/#tools">Tools</a>
+      <a href="/blog/">Blog</a>
+      <a href="/founder/">Founder</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+    <a class="btn btn-sm header-cta" href="/#tools">All tools</a>
+  </div>
+</header>
+<main><div class="container">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <span>Image Resizer</span></nav>
+<div class="tool-top"><span class="pill pill-soft"><span class="dot"></span>Client-side sandbox</span><span class="pill">No uploads</span></div>
+<h1 class="reveal">Resize Image to 20KB Online — Free Photo Resizer in KB</h1>
+<p class="lead reveal">Compress any JPG or PNG photo to exactly <strong>20KB, 50KB, 100KB</strong> or any size you choose. Perfect for PAN card uploads, passport photos, signatures and job portals. Everything runs in your browser — no upload, no signup.</p>
+<div class="workspace reveal">
+  <div class="dropzone" id="dropzone" role="button" tabindex="0" aria-label="Upload an image to resize">
+    <span class="dz-icon"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#i-upload_file"/></svg></span>
+    <p><strong>Drag &amp; drop your image here</strong></p>
+    <p>or click to browse — JPG, PNG, WebP. Files stay on your device.</p>
+    <span class="dz-privacy"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#i-lock"/></svg>Files never leave your device</span>
+  </div>
+  <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp" hidden>
+  <div id="controlsBox" hidden>
+    <p class="note" style="margin-bottom:8px"><strong id="fileInfo">—</strong></p>
+    <div class="filter-chips" id="presetChips" role="group" aria-label="Target size presets">
+      <button class="chip" data-kb="20">20 KB</button>
+      <button class="chip" data-kb="50">50 KB</button>
+      <button class="chip active" data-kb="100">100 KB</button>
+      <button class="chip" data-kb="200">200 KB</button>
+    </div>
+    <p class="note" style="margin:10px 0 4px">Or set a custom target size (KB):</p>
+    <input type="number" id="customKb" min="5" max="5000" value="100" inputmode="numeric" aria-label="Custom target size in KB" style="max-width:160px">
+  </div>
+  <p class="note">How this works: the tool re-encodes your photo and gently lowers quality — then dimensions only if needed — until it fits your target KB. You get the smallest quality loss that hits the size.</p>
+  <button class="btn" id="actionBtn" disabled>Resize Image</button>
+  <div class="progress"><div></div></div>
+  <p class="status" id="statusMsg" role="status"></p>
+  <div class="result" id="resultBox"></div>
+</div>
+<h2 class="reveal">How to resize a photo to 20KB</h2>
+<ol class="steps reveal">
+  <li>Drop your photo into the box above (or click to browse).</li>
+  <li>Pick the <strong>20 KB</strong> preset — or 50KB / 100KB / custom.</li>
+  <li>Click <strong>Resize Image</strong> and download the result at your exact target size.</li>
+</ol>
+<h2 class="reveal">About this free image resizer</h2>
+<p class="reveal">Government portals, job applications and exam forms across India and Pakistan ask for photos under strict limits — 20KB for signatures, 50KB for passport photos, 100KB for documents. This tool hits those exact numbers. Upload a JPG, PNG or WebP, choose a preset, and the resizer binary-searches the JPEG quality setting (and shrinks dimensions only as a last resort) until the output lands at or just under your target. Because it stops the moment the size fits, visual quality stays as high as possible — text on PAN cards and documents remains crisp and readable. Everything is computed locally with the Canvas API: no server, no queue, no account, no watermark. It works offline once the page is loaded, handles photos from any phone camera, and never stores or transmits your image.</p>
+<h2 class="reveal">Frequently asked questions</h2>
+<div class="faq reveal">
+  <details><summary>How do I resize an image to 20KB?</summary><div class="faq-body"><p>Upload your photo, select the 20KB preset and click Resize Image. The tool tunes quality and dimensions until the file is 20KB or slightly under, then gives you the download.</p></div></details>
+  <details><summary>Will my photo look bad at 20KB?</summary><div class="faq-body"><p>Quality is reduced only as much as needed to hit the size. For document photos, ID cards and signatures the result stays sharp and readable. Very detailed photos may show mild softness — that's the trade-off of any KB limiter.</p></div></details>
+  <details><summary>Can I resize a PNG photo?</summary><div class="faq-body"><p>Yes. PNG, JPG and WebP are accepted; output is JPEG (best for photos) unless your image has transparency worth keeping, in which case PNG is used.</p></div></details>
+  <details><summary>Is there a file size limit?</summary><div class="faq-body"><p>No upload limit — files never leave your device. Very large phone photos just need a moment to process in your browser.</p></div></details>
+</div>
+</div></main>
+<footer class="site-footer"><div class="container">
+  <p>&copy; <span data-year></span> PDFPax. Free online tools, no signup.</p>
+  <p><a href="/about.html">About</a> &middot; <a href="/contact.html">Contact</a> &middot; <a href="/blog/">Blog</a></p>
+</div></footer>
+<script src="/assets/js/main.js?v=20261005" defer></script>
+<script src="/assets/js/cms.js" defer></script>
+<script>
+(function(){
+"use strict";
+var dz=document.getElementById('dropzone'),fi=document.getElementById('fileInput'),
+    btn=document.getElementById('actionBtn'),st=document.getElementById('statusMsg'),
+    res=document.getElementById('resultBox'),prog=document.querySelector('.progress'),
+    controls=document.getElementById('controlsBox'),info=document.getElementById('fileInfo'),
+    chips=document.getElementById('presetChips'),customKb=document.getElementById('customKb');
+var imgFile=null,imgEl=null,targetKb=100;
+function fmt(b){return b<1024?b+' B':(b/1024).toFixed(1)+' KB';}
+dz.addEventListener('click',function(){fi.click();});
+dz.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();fi.click();}});
+['dragover','dragenter'].forEach(function(ev){dz.addEventListener(ev,function(e){e.preventDefault();dz.classList.add('drag');});});
+['dragleave','drop'].forEach(function(ev){dz.addEventListener(ev,function(e){e.preventDefault();dz.classList.remove('drag');});});
+dz.addEventListener('drop',function(e){if(e.dataTransfer.files.length)loadFile(e.dataTransfer.files[0]);});
+fi.addEventListener('change',function(){if(fi.files.length)loadFile(fi.files[0]);});
+function loadFile(f){
+  if(!/^image\/(jpeg|png|webp)$/.test(f.type)){st.textContent='Please choose a JPG, PNG or WebP image.';return;}
+  imgFile=f;st.textContent='';res.innerHTML='';
+  var url=URL.createObjectURL(f),im=new Image();
+  im.onload=function(){
+    imgEl=im;URL.revokeObjectURL(url);
+    info.textContent=f.name+' — '+fmt(f.size)+' — '+im.naturalWidth+'×'+im.naturalHeight+'px';
+    controls.hidden=false;btn.disabled=false;
+    st.textContent='Ready. Pick a target size and click Resize Image.';
+  };
+  im.onerror=function(){st.textContent='Could not read that image. Try another file.';};
+  im.src=url;
+}
+chips.addEventListener('click',function(e){
+  var c=e.target.closest('.chip');if(!c)return;
+  chips.querySelectorAll('.chip').forEach(function(x){x.classList.remove('active');});
+  c.classList.add('active');targetKb=parseInt(c.dataset.kb,10);customKb.value=targetKb;
+});
+customKb.addEventListener('input',function(){
+  var v=parseInt(customKb.value,10);
+  if(v>=5&&v<=5000){targetKb=v;chips.querySelectorAll('.chip').forEach(function(x){x.classList.toggle('active',parseInt(x.dataset.kb,10)===v);});}
+});
+function canvasToBlob(canvas,quality){
+  return new Promise(function(resolve){
+    canvas.toBlob(function(b){resolve(b);},'image/jpeg',quality);
+  });
+}
+btn.addEventListener('click',async function(){
+  if(!imgEl)return;
+  btn.disabled=true;prog.classList.add('busy');st.textContent='Resizing…';res.innerHTML='';
+  try{
+    var targetBytes=targetKb*1024;
+    var w=imgEl.naturalWidth,h=imgEl.naturalHeight;
+    var scale=1,blob=null,quality=0.92;
+    /* phase 1: binary-search JPEG quality at full dimensions */
+    var lo=0.05,hi=0.95,best=null;
+    for(var i=0;i<7;i++){
+      var q=(lo+hi)/2;
+      var cv=document.createElement('canvas');cv.width=w;cv.height=h;
+      cv.getContext('2d').drawImage(imgEl,0,0,w,h);
+      var b=await canvasToBlob(cv,q);
+      if(!b)break;
+      if(b.size<=targetBytes){best=b;lo=q;}else{hi=q;}
+      if(hi-lo<0.02)break;
+    }
+    blob=best;
+    /* phase 2: if still too big, shrink dimensions stepwise */
+    while((!blob||blob.size>targetBytes)&&scale>0.1){
+      scale*=0.85;
+      var nw=Math.round(w*scale),nh=Math.round(h*scale);
+      var q2=0.85;blob=null;
+      for(var j=0;j<5;j++){
+        var cv2=document.createElement('canvas');cv2.width=nw;cv2.height=nh;
+        cv2.getContext('2d').drawImage(imgEl,0,0,nw,nh);
+        var b2=await canvasToBlob(cv2,q2);
+        if(b2&&b2.size<=targetBytes){blob=b2;break;}
+        q2-=0.15;
+      }
+    }
+    prog.classList.remove('busy');btn.disabled=false;
+    if(!blob){st.textContent='Could not reach '+targetKb+' KB — try a larger target.';return;}
+    var url=URL.createObjectURL(blob);
+    st.textContent='Done: '+fmt(imgFile.size)+' → '+fmt(blob.size)+'.';
+    res.innerHTML='<p><strong>Resized to '+fmt(blob.size)+'</strong> (target ≤ '+targetKb+' KB)</p>'
+      +'<p><img src="'+url+'" alt="Resized preview" style="max-width:220px;border-radius:8px"></p>'
+      +'<p><a class="btn" href="'+url+'" download="resized-'+targetKb+'kb.jpg">Download image</a></p>';
+  }catch(err){prog.classList.remove('busy');btn.disabled=false;st.textContent='Something went wrong — please try another image.';}
+});
+})();
+</script>
+<script>setTimeout(function(){try{var e=document.querySelectorAll(".reveal:not(.in)");for(var i=0;i<e.length;i++){e[i].classList.add("in");}}catch(_){}},2500);</script>
+</body>
+</html>
