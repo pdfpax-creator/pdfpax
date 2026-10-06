@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Compressor Online Free — Reduce JPG/PNG Size | PDFPax</title>
+<meta name="description" content="Compress images online free. Reduce JPG, PNG, WebP file size with adjustable quality — see before/after size live. No signup, works in your browser.">
+<link rel="canonical" href="https://pdfpax.com/tools/image-compressor.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PDFPax">
+<meta property="og:title" content="Image Compressor Online Free | PDFPax">
+<meta property="og:description" content="Shrink any image's file size with a quality slider. Live before/after preview. Free, no signup.">
+<meta property="og:image" content="https://pdfpax.com/assets/img/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://pdfpax.com/tools/image-compressor.html">
+<link rel="stylesheet" href="/assets/css/style.css?v=20261005c">
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Image Compressor","url":"https://pdfpax.com/tools/image-compressor.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-14QC3Q5DRY"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',analytics_storage:'denied',functionality_storage:'denied',personalization_storage:'denied',security_storage:'granted'});
+gtag('js',new Date());gtag('config','G-14QC3Q5DRY');
+try{if(localStorage.getItem('pdfpax-consent')==='accepted'){gtag('consent','update',{ad_storage:'granted',analytics_storage:'granted',functionality_storage:'granted',personalization_storage:'granted'});}}catch(e){}
+</script>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<header class="site-header"><div class="container header-inner">
+<a class="brand" href="/" aria-label="PDFPax home"><img src="/assets/img/logo.svg" width="32" height="32" alt="PDFPax logo"><span>PDFPax</span></a>
+<button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#i-menu"/></svg></button>
+<nav class="site-nav" aria-label="Main navigation"><a href="/">Home</a><a href="/#tools">Tools</a><a href="/blog/">Blog</a><a href="/founder/">Founder</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></nav>
+<a class="btn btn-sm header-cta" href="/#tools">All tools</a></div></header>
+<main><div class="container">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <span>Image Compressor</span></nav>
+<div class="tool-top"><span class="pill pill-soft"><span class="dot"></span>Client-side sandbox</span><span class="pill">No uploads</span></div>
+<h1 class="reveal">Image Compressor — Shrink Photos Without Losing Quality</h1>
+<p class="lead reveal">Reduce any JPG, PNG or WebP file size in seconds. Drag the quality slider, watch the size drop live, download when happy. Free, private, no signup.</p>
+<div class="workspace reveal">
+<div class="dropzone" id="dropzone" role="button" tabindex="0" aria-label="Upload an image to compress">
+<span class="dz-icon"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#i-upload_file"/></svg></span>
+<p><strong>Drag &amp; drop your image here</strong></p><p>or click to browse — files stay on your device.</p>
+<span class="dz-privacy"><svg class="ic" aria-hidden="true"><use href="/assets/img/icons.svg#i-lock"/></svg>Files never leave your device</span></div>
+<input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp" hidden>
+<div id="controlsBox" hidden>
+<p class="note" style="margin-bottom:8px"><strong id="fileInfo">—</strong></p>
+<label class="note" for="qRange">Quality: <strong id="qVal">80%</strong> <span id="sizeLive" style="color:var(--primary-dark)"></span></label>
+<input type="range" id="qRange" min="10" max="100" step="1" value="80" style="width:100%;max-width:440px">
+<div style="display:flex;gap:16px;flex-wrap:wrap;margin:16px 0;align-items:flex-start">
+<div><p class="note" style="text-align:center">Original</p><img id="prevOrig" alt="Original preview" style="max-width:220px;border-radius:8px;border:1px solid var(--border)"></div>
+<div><p class="note" style="text-align:center">Compressed</p><img id="prevComp" alt="Compressed preview" style="max-width:220px;border-radius:8px;border:1px solid var(--border)"></div>
+</div>
+</div>
+<button class="btn" id="actionBtn" disabled>Compress &amp; Download</button>
+<div class="progress"><div></div></div>
+<p class="status" id="statusMsg" role="status"></p>
+<div class="result" id="resultBox"></div>
+</div>
+<h2 class="reveal">How to compress an image</h2>
+<ol class="steps reveal"><li>Drop your image into the box above.</li><li>Move the <strong>quality slider</strong> — watch the file size update live.</li><li>Compare the before/after preview, then download.</li></ol>
+<h2 class="reveal">About this free image compressor</h2>
+<p class="reveal">Large photos slow down websites, eat phone storage, and get rejected by upload forms. This compressor re-encodes your image at the quality you choose — 80% looks identical to the original for most photos while cutting size dramatically. The live preview shows you exactly what you're getting before you download. JPG, PNG and WebP are supported; output is optimized JPEG for photos. Everything happens in your browser, so there's no upload wait and your images stay private.</p>
+</div></main>
+<footer class="site-footer"><div class="container"><p>&copy; <span data-year></span> PDFPax. Free online tools, no signup.</p><p><a href="/about.html">About</a> &middot; <a href="/contact.html">Contact</a> &middot; <a href="/blog/">Blog</a></p></div></footer>
+<script src="/assets/js/main.js?v=20261005" defer></script>
+<script>
+(function(){
+"use strict";
+var dz=document.getElementById('dropzone'),fi=document.getElementById('fileInput'),
+btn=document.getElementById('actionBtn'),st=document.getElementById('statusMsg'),
+res=document.getElementById('resultBox'),box=document.getElementById('controlsBox'),
+info=document.getElementById('fileInfo'),qR=document.getElementById('qRange'),
+qV=document.getElementById('qVal'),sL=document.getElementById('sizeLive'),
+pO=document.getElementById('prevOrig'),pC=document.getElementById('prevComp');
+var img=null,origSize=0,timer=null,lastBlob=null;
+function fmt(b){return b<1024?b+' B':(b/1024).toFixed(1)+' KB';}
+function loadFile(f){
+if(!/^image\/(jpeg|png|webp)$/.test(f.type)){st.textContent='Please choose a JPG, PNG or WebP image.';return;}
+origSize=f.size;
+var url=URL.createObjectURL(f),im=new Image();
+im.onload=function(){img=im;pO.src=url;
+info.textContent=f.name+' — '+fmt(f.size)+' — '+im.naturalWidth+'×'+im.naturalHeight;
+box.hidden=false;btn.disabled=false;st.textContent='Move the slider to preview compression.';res.innerHTML='';preview();};
+im.onerror=function(){st.textContent='Could not read that image.';};im.src=url;
+}
+dz.addEventListener('click',function(){fi.click();});
+dz.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();fi.click();}});
+['dragover','dragenter'].forEach(function(ev){dz.addEventListener(ev,function(e){e.preventDefault();dz.classList.add('drag');});});
+['dragleave','drop'].forEach(function(ev){dz.addEventListener(ev,function(e){e.preventDefault();dz.classList.remove('drag');});});
+dz.addEventListener('drop',function(e){if(e.dataTransfer.files.length)loadFile(e.dataTransfer.files[0]);});
+fi.addEventListener('change',function(){if(fi.files.length)loadFile(fi.files[0]);});
+qR.addEventListener('input',function(){qV.textContent=qR.value+'%';clearTimeout(timer);timer=setTimeout(preview,250);});
+function preview(){
+if(!img)return;
+var q=parseInt(qR.value,10)/100;
+var c=document.createElement('canvas');c.width=img.naturalWidth;c.height=img.naturalHeight;
+c.getContext('2d').drawImage(img,0,0);
+c.toBlob(function(b){if(!b)return;lastBlob=b;
+if(pC.src&&pC.src.indexOf('blob:')===0)URL.revokeObjectURL(pC.src);
+pC.src=URL.createObjectURL(b);
+var pct=Math.round((1-b.size/origSize)*100);
+sL.textContent=' → '+fmt(b.size)+' ('+pct+'% smaller)';},'image/jpeg',q);
+}
+btn.addEventListener('click',function(){
+if(!lastBlob){st.textContent='Wait for the preview to finish.';return;}
+var url=URL.createObjectURL(lastBlob);
+st.textContent='Done: '+fmt(origSize)+' → '+fmt(lastBlob.size)+'.';
+res.innerHTML='<p><a class="btn" href="'+url+'" download="compressed.jpg">Download Compressed Image</a></p>';
+});
+})();
+</script>
+<script>setTimeout(function(){try{var e=document.querySelectorAll(".reveal:not(.in)");for(var i=0;i<e.length;i++){e[i].classList.add("in");}}catch(_){}},2500);</script>
+</body>
+</html>
